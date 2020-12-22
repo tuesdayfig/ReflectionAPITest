@@ -1,8 +1,16 @@
 package org.fig.reflection.model;
 
+import org.fig.reflection.annotation.Column;
+import org.fig.reflection.annotation.PrimaryKey;
+
 public class Person {
+    @PrimaryKey
     private long id;
+
+    @Column
     private String name;
+
+    @Column
     private int age;
 
     public Person(){
